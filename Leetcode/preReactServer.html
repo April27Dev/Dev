@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <script>
+        const problems=[{
+            title:"1. Two Sum",
+            difficulty:"Easy",
+            acceptance:"53.3%"
+        },{
+            title:"2. Add Two Numbers",
+            difficulty:"Medium",
+            acceptance:"43.7%"
+        },
+        {title:"3. Longest Substring Without Repeating Chara",
+        difficulty:"Medium",
+        acceptance:"35.2%"}]
+        function createChild(){
+            
+        }
+        function renderProblems(){
+             const parent=document.getElementById("problem-statements");
+             const tabletag=document.createElement("table");
+               for(let i=0;i<problems.length;i++){
+                  const trtag=document.createElement("tr");
+                  const tdEl1=document.createElement("td");
+                  tdEl1.innerHtml=problems[i].title;
+                  const tdEl2=document.createElement("td");
+                  tdEl2.innerHtml=problems[i].diificulty;
+                  const tdEl3=document.createElement("td");
+                  tdEl3.innerHtml=problems[i].acceptance;
+             }
+        }
+    </script>
+</head>
+<body>
+<input type="text" placeholder="email" required/>
+<input type="password" placeholder="password" required/>
+<button>Sign-in</button>
+    <br/>
+    <div id="problem-statements">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </div>
+</body>
+</html>
